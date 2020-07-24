@@ -1,0 +1,67 @@
+<!Doctype html>
+<html> 
+    <head>
+<meta charset="utf-8">
+<title>Yulia's personnel site</title>
+</head>
+
+<body>
+    <h2>My address is following:</h2>
+<address>
+    <ul>
+        <li>Country: Kazakhstan</li>
+        <li>City: Almaty</li>
+        <li>Microdistrict: Ainabulak</li>
+        <li>E-mail: laramera@outlook.it</li>
+    </ul>
+</address>
+<hr/>
+<h2>Send me your message:</h2>
+<!--Создаем форму, в ней в акшн добавим название файла, который хранится в той же папке, что и наш
+этот html файл, чтобы при нажатии кнопки submit, нас перебросило на другую страницу-->
+<!--Это сделано по той причине, что пока здесь не используется джаваскрипт
+<form class="" action="22. HTML Tables Code Challenge.html" method="post">-->
+    <!--Если мы акшин заменим на mailto:laramera@hotmail.it, то когда мы нажмем кнопку submit, 
+        сайт откроет наше окно для написания емайла. Все, что пользователь заполнит в этой форме,
+    будет отправлено на наш е-майл, который мы указали в теге-->
+    <!--Здесь enctype specifies that our web site is encoded in UTF 8 as is written in the head of the 
+    document. We are going to say that the data in our form is encoded in plain text so that
+ when it launces the mail app we won't have these funny percentage signs and numbers. We'll 
+just have plain text.-->
+<form class="" action="mailto:laramera@live.it" method="post" enctype="text/plain">
+   
+    <!--Наша первая метка-->
+    <label>Your Name:</label>
+
+    <!--Создадим поле для текста:-->
+    <!--Тег можно посмотреть по ссылке: https://developer.mozilla.org/ru/docs/Web/HTML/Element/input-->
+<input type="text" name="yourName" value=""> <br/><br/>
+
+<label>Your Email:</label>
+<input type="email" name="yourEmail"><br/><br/>
+
+
+<label>Your message:</label><br/>
+<!--rows - how tall is our textarea-->
+<!--cols - how wide is our textarea-->
+<textarea name="yourMessage" rows="10" cols="30"></textarea>
+<input type="submit">
+
+
+
+
+
+</form>
+
+</body>
+
+
+    </html>
+
+
+    <!--So we use the form tag to define what should go into our form and this by itself doesn't do 
+    anything. So in order to do anything we will need two important HTML elements: <label> & <input>.
+    We can define the input type by using the type attribute. By setting the attribute type to various
+predefined keywords we actually end up with compleately different things on our web site. Using
+the same tag <input> with different attributes we are getting completely different objects on our
+web site anywhere from text boxes to patterns to color pictures and etc.-->
